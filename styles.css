@@ -11,13 +11,8 @@ body {
   background-color: #202733;
 }
 
-main {
-  max-width: 450px;
-  margin: 0 auto;
-}
-
 .card {
-  margin-top: 120px;
+  margin: 120px auto 0;
   text-align: center;
   width: 343px;
   background-color: #313a48;
@@ -69,12 +64,8 @@ main {
 }
 
 @media (min-width: 600px) {
-  main {
-    max-width: 600px;
-  }
-
   .card {
-    margin-top: 223px;
+    margin: 223px auto 0;
     width: 540px;
     border-radius: 15px;
     padding: 48px 48px 72px;
@@ -99,5 +90,9 @@ main {
     width: 444px;
     height: 16px;
     margin-top: 40px;
+  }
+
+  .dice:hover {
+    cursor: pointer;
   }
 }
