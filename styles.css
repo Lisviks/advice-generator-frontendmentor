@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #202733;
+}
+
+main {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.card {
+  margin-top: 120px;
+  text-align: center;
+  width: 343px;
+  background-color: #313a48;
+  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+  border-radius: 10px;
+  padding: 40px 24px 64px;
+  position: relative;
+}
+
+.card h1 {
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 3.45714px;
+  color: #53ffaa;
+  text-transform: uppercase;
+}
+
+.card p {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.257143px;
+  color: #cee3e9;
+  margin-top: 24px;
+}
+
+.divider {
+  background-image: url('./images/pattern-divider-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 295px;
+  height: 16px;
+  margin-top: 24px;
+}
+
+.dice {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-color: #53ffaa;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -32px;
+}
+
+@media (min-width: 600px) {
+  main {
+    max-width: 600px;
+  }
+
+  .card {
+    margin-top: 223px;
+    width: 540px;
+    border-radius: 15px;
+    padding: 48px 48px 72px;
+  }
+
+  .card h1 {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 4.08571px;
+  }
+
+  .card p {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.3px;
+  }
+
+  .divider {
+    background-image: url('./images/pattern-divider-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 444px;
+    height: 16px;
+    margin-top: 40px;
+  }
+}
