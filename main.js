@@ -10,3 +10,12 @@ diceBtn.addEventListener('click', () => {
       adviceSpan.innerText = data.slip.advice;
     });
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  fetch('https://api.adviceslip.com/advice')
+    .then((res) => res.json())
+    .then((data) => {
+      adviceIdSpan.innerText = data.slip.id;
+      adviceSpan.innerText = data.slip.advice;
+    });
+});
